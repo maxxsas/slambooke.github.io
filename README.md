@@ -1,4 +1,4 @@
 slambooke
 =========
 
-Open School
+Exploring schools and bringing students in Ghana together..
