@@ -69,12 +69,16 @@
 			<strong class="no-margin">Skin Color</strong>
 		</div>
 		<div class="theme-box">
+			<a class="theme-color" style="background:#323447" id="default"></a>
+			<a class="theme-color" style="background:#efefef" id="skin-1"></a>
+			<a class="theme-color" style="background:#a93922" id="skin-2"></a>
 			<a class="theme-color" style="background:#3e6b96" id="skin-3"></a>
+			<a class="theme-color" style="background:#635247" id="skin-4"></a>
 		</div>
 	</div><!-- /theme-setting -->
 
 	<div id="wrapper" class="preload">
-		<div id="top-nav" class="skin-2 fixed">
+		<div id="top-nav" class="skin-1 fixed">
 			<button type="button" class="navbar-toggle pull-left" id="sidebarToggle">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -86,18 +90,79 @@
 			<ul class="nav-notification clearfix">
 				
 				<li><a href="app.html" class="fa fa-home fa-lg"></a></li>
-				<li><a href="search.html" class="fa fa-search fa-lg"> Search</a></li>
+				<!--<li><a href="search.html" class="fa fa-search fa-lg"></a></li>-->
+				
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<i class="fa fa-arrow-circle-o-down fa-lg"></i>
+						<span class="notification-label">0</span>
+					</a>
+					<!--<ul class="dropdown-menu message dropdown-1">
+						<li><a>Latest updates on slambooke</a></li>					  
+						<li>
+							<a class="clearfix" href="#">
+								<img src="img/favicon.ico" alt="User Avatar">
+								<div class="detail">
+									<strong>John Doe</strong>
+									<p class="no-margin">
+										Lorem ipsum dolor sit amet...
+									</p>
+									<small class="text-muted"><i class="fa fa-check text-success"></i> 27m ago</small>
+								</div>
+							</a>	
+						</li>
+						<li>
+							<a class="clearfix" href="#">
+								<img src="img/favicon.ico" alt="User Avatar">
+								<div class="detail">
+									<strong>Jane Doe</strong>
+									<p class="no-margin">
+										Lorem ipsum dolor sit amet...
+									</p>
+									<small class="text-muted"><i class="fa fa-check text-success"></i> 5hr ago</small>
+								</div>
+							</a>	
+						</li>
+						<li>
+							<a class="clearfix" href="#">
+								<img src="img/favicon.ico" alt="User Avatar">
+								<div class="detail">
+									<strong>Bill Doe</strong>
+									<p class="no-margin">
+										Lorem ipsum dolor sit amet...
+									</p>
+									<small class="text-muted"><i class="fa fa-reply"></i> Yesterday</small>
+								</div>
+							</a>	
+						</li>
+						<li>
+							<a class="clearfix" href="#">
+								<img src="img/favicon.ico" alt="User Avatar">
+								<div class="detail">
+									<strong>Baby Doe</strong>
+									<p class="no-margin">
+										Lorem ipsum dolor sit amet...
+									</p>
+									<small class="text-muted"><i class="fa fa-reply"></i> 9 Feb 2013</small>
+								</div>
+							</a>	
+						</li>
+						<li><a href="#">View all messages</a></li>					  
+					</ul>
+				</li>-->
 				
 					
+				
+				
 					
 				<li class="profile dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Slambooke</strong><span><i class="fa fa-chevron-down"></i></span></a>
 					
 					<ul class="dropdown-menu">
-						<li><a tabindex="-1" href="#" class="main-link"><i class="fa fa-book fa-lg"></i> About</a></li>
+						<!--<li><a tabindex="-1" href="#" class="main-link"><i class="fa fa-book fa-lg"></i> About</a></li>
 						<li class="divider"></li>
 						<li><a tabindex="-1" href="#" class="main-link"><i class="fa fa-group fa-lg"></i> Our Team</a></li>
-						<li class="divider"></li>
+						<li class="divider"></li>-->
 						<li><a tabindex="-1" href="contact.html" class="main-link"><i class="fa fa-envelope-o fa-lg"></i> Contact</a></li>
 					</ul>
 				</li>
@@ -107,7 +172,7 @@
 		
 		<aside class="skin-2 fixed">
 			<div class="brand">
-				<span>Slambooke</span>
+				<span><strong>Slambooke</strong></span>
 				
 			</div><!-- /brand -->					
 			<div class="sidebar-inner">
@@ -117,19 +182,22 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="btn btn-sm pull-right" href="app.html">
-						<a class="">Press to Toggle</a>
-					</a>
+					<a class="btn btn-sm pull-right" href="app.html"></a>
+					
+					
 				</div><!-- /size-toggle -->	
 				
-				<div class="search-block">
+				<!--<div class="search-block">
 					<div class="input-group">
 						<input type="text" class="form-control input-sm" placeholder="search here...">
 						<span class="input-group-btn">
 							<button class="btn btn-default btn-sm" type="button"><i class="fa fa-search"></i></button>
 						</span>
-					</div><!-- /input-group -->
-				</div><!-- /search-block -->
+					</div><!-- /input-group --</div>-->
+				<!-- /search-block -->
+				
+				
+				
 				<div class="main-menu">
 					<ul>
 						<li>
@@ -138,23 +206,12 @@
 									<i class="fa fa-home fa-lg"></i> 
 								</span>
 								<span class="text">
-									App
+									Home
 								</span>
 								<span class="menu-hover"></span>
 							</a>
 						</li>
-						<li>
-							<a href="#">
-								<span class="menu-icon">
-									<i class="fa fa-sitemap fa-lg"></i> 
-								</span>
-								<span class="text">
-									Events
-								</span>
-								<span class="menu-hover"></span>
-							</a>
-						</li>
-						<li>
+						<!--<li>
 							<a href="blog.html">
 								<span class="menu-icon">
 									<i class="fa fa-flag fa-lg"></i> 
@@ -164,8 +221,20 @@
 								</span>
 								<span class="menu-hover"></span>
 							</a>
-						</li>
+						</li>-->
 						<li>
+							<a href="#">
+								<span class="menu-icon">
+									<i class="fa fa-arrow-circle-o-down fa-lg"></i> 
+								</span>
+								<span class="text">
+									Updates 
+								</span>
+								<span class="badge pull-right">0</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<!--<li>
 							<a href="developer.html">
 								<span class="menu-icon">
 									<i class="fa fa-code fa-lg"></i> 
@@ -175,11 +244,11 @@
 								</span>
 								<span class="menu-hover"></span>
 							</a>
-						</li>
+						</li>-->
 						<li>
-							<a href="developer.html">
+							<a href="#">
 								<span class="menu-icon">
-									<i class="fa fa-code fa-lg"></i> 
+									<i class="fa  fa-question-circle fa-lg"></i> 
 								</span>
 								<span class="text">
 									About
@@ -220,12 +289,12 @@
 												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
 											</a>
 											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  Central University College
+												<strong class="font-14">
+												  Central University
 												</strong>
 												<br>
 												<span class="grey">
-												   central@email.com
+												   # Miotso Prampram
 												</span>
 												<div class="seperator"></div>
 												<a class="btn btn-xs btn-success">View Profile</a>
@@ -244,12 +313,12 @@
 												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
 											</a>
 											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  KNUST Of Science & Technology
+												<strong class="font-14">
+												  KNUST
 												</strong>
 												<br>
 												<span class="grey">
-												   knust@email.com
+												   # Kumasi
 												</span>
 												<div class="seperator"></div>
 												<a class="btn btn-xs btn-success">View Profile</a>
@@ -268,136 +337,12 @@
 												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
 											</a>
 											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  University Of Ghana Legon
+												<strong class="font-14">
+												  University Of Ghana
 												</strong>
 												<br>
 												<span class="grey">
-												   John@email.com
-												</span>
-												<div class="seperator"></div>
-												<a class="btn btn-xs btn-success">View Profile</a>
-												<a class="btn btn-xs btn-success">Follow</a>
-								</div>
-							</div>
-						</div><!-- /panel -->
-					</div><!-- /.col -->
-					
-					
-					
-					<div class="col-md-4 col-sm-4">
-						<div class="panel panel-default panel-stat2 bg-success">
-							<div class="panel-body">
-								<a class="pull-left avatar" href="#">
-												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
-											</a>
-											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  Saint Augustine College
-												</strong>
-												<br>
-												<span class="grey">
-												   John@email.com
-												</span>
-												<div class="seperator"></div>
-												<a class="btn btn-xs btn-success">View Profile</a>
-												<a class="btn btn-xs btn-success">Follow</a>
-								</div>
-							</div>
-						</div><!-- /panel -->
-					</div><!-- /.col -->
-					
-					
-					
-					
-					
-					<div class="col-md-4 col-sm-4">
-						<div class="panel panel-default panel-stat2 bg-success">
-							<div class="panel-body">
-								<a class="pull-left avatar" href="#">
-												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
-											</a>
-											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  Saint Augustine College
-												</strong>
-												<br>
-												<span class="grey">
-												   John@email.com
-												</span>
-												<div class="seperator"></div>
-												<a class="btn btn-xs btn-success">View Profile</a>
-												<a class="btn btn-xs btn-success">Follow</a>
-								</div>
-							</div>
-						</div><!-- /panel -->
-					</div><!-- /.col -->
-					
-					
-					
-					
-					<div class="col-md-4 col-sm-4">
-						<div class="panel panel-default panel-stat2 bg-success">
-							<div class="panel-body">
-								<a class="pull-left avatar" href="#">
-												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
-											</a>
-											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  Saint Augustine College
-												</strong>
-												<br>
-												<span class="grey">
-												   John@email.com
-												</span>
-												<div class="seperator"></div>
-												<a class="btn btn-xs btn-success">View Profile</a>
-												<a class="btn btn-xs btn-success">Follow</a>
-								</div>
-							</div>
-						</div><!-- /panel -->
-					</div><!-- /.col -->
-					
-					
-					
-					
-					<div class="col-md-4 col-sm-4">
-						<div class="panel panel-default panel-stat2 bg-success">
-							<div class="panel-body">
-								<a class="pull-left avatar" href="#">
-												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
-											</a>
-											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  Saint Augustine College
-												</strong>
-												<br>
-												<span class="grey">
-												   John@email.com
-												</span>
-												<div class="seperator"></div>
-												<a class="btn btn-xs btn-success">View Profile</a>
-												<a class="btn btn-xs btn-success">Follow</a>
-								</div>
-							</div>
-						</div><!-- /panel -->
-					</div><!-- /.col -->
-					
-					
-					
-					<div class="col-md-4 col-sm-4">
-						<div class="panel panel-default panel-stat2 bg-success">
-							<div class="panel-body">
-								<a class="pull-left avatar" href="#">
-												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
-											</a>
-											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  Saint Augustine College
-												</strong>
-												<br>
-												<span class="grey">
-												   John@email.com
+												   # Legon Accra
 												</span>
 												<div class="seperator"></div>
 												<a class="btn btn-xs btn-success">View Profile</a>
@@ -407,10 +352,6 @@
 						</div><!-- /panel -->
 					</div><!-- /.col -->
 					</div>
-				
-				
-				
-				
 				
 				<div class="padding-md">
 				<div class="row">
@@ -423,12 +364,12 @@
 												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
 											</a>
 											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  Saint Augustine College
+												<strong class="font-14">
+												 St Thomas Aquinas
 												</strong>
 												<br>
 												<span class="grey">
-												   John@email.com
+												  # Cantonments Accra
 												</span>
 												<div class="seperator"></div>
 												<a class="btn btn-xs btn-success">View Profile</a>
@@ -447,37 +388,12 @@
 												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
 											</a>
 											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  Saint Augustine College
+												<strong class="font-14">
+												  Labone
 												</strong>
 												<br>
 												<span class="grey">
-												   John@email.com
-												</span>
-												<div class="seperator"></div>
-												<a class="btn btn-xs btn-success">View Profile</a>
-												<a class="btn btn-xs btn-success">Follow</a>
-								</div>
-							</div>
-						</div><!-- /panel -->
-					</div><!-- /.col -->
-					
-					
-					
-					
-					<div class="col-md-4 col-sm-4">
-						<div class="panel panel-default panel-stat2 bg-success">
-							<div class="panel-body">
-								<a class="pull-left avatar" href="#">
-												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
-											</a>
-											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  Saint Augustine College
-												</strong>
-												<br>
-												<span class="grey">
-												   John@email.com
+												   # Cantonments Accra
 												</span>
 												<div class="seperator"></div>
 												<a class="btn btn-xs btn-success">View Profile</a>
@@ -497,12 +413,12 @@
 												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
 											</a>
 											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  Saint Augustine College
+												<strong class="font-14">
+												  Presec
 												</strong>
 												<br>
 												<span class="grey">
-												   John@email.com
+												   Legon
 												</span>
 												<div class="seperator"></div>
 												<a class="btn btn-xs btn-success">View Profile</a>
@@ -511,104 +427,7 @@
 							</div>
 						</div><!-- /panel -->
 					</div><!-- /.col -->
-					
-					
-					
-					
-					<div class="col-md-4 col-sm-4">
-						<div class="panel panel-default panel-stat2 bg-success">
-							<div class="panel-body">
-								<a class="pull-left avatar" href="#">
-												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
-											</a>
-											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  Saint Augustine College
-												</strong>
-												<br>
-												<span class="grey">
-												   John@email.com
-												</span>
-												<div class="seperator"></div>
-												<a class="btn btn-xs btn-success">View Profile</a>
-												<a class="btn btn-xs btn-success">Follow</a>
-								</div>
-							</div>
-						</div><!-- /panel -->
-					</div><!-- /.col -->
-					
-					
-					
-					<div class="col-md-4 col-sm-4">
-						<div class="panel panel-default panel-stat2 bg-success">
-							<div class="panel-body">
-								<a class="pull-left avatar" href="#">
-												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
-											</a>
-											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  Saint Augustine College
-												</strong>
-												<br>
-												<span class="grey">
-												   John@email.com
-												</span>
-												<div class="seperator"></div>
-												<a class="btn btn-xs btn-success">View Profile</a>
-												<a class="btn btn-xs btn-success">Follow</a>
-								</div>
-							</div>
-						</div><!-- /panel -->
-					</div><!-- /.col -->
-					
-					
-					
-					<div class="col-md-4 col-sm-4">
-						<div class="panel panel-default panel-stat2 bg-success">
-							<div class="panel-body">
-								<a class="pull-left avatar" href="#">
-												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
-											</a>
-											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  Saint Augustine College
-												</strong>
-												<br>
-												<span class="grey">
-												   John@email.com
-												</span>
-												<div class="seperator"></div>
-												<a class="btn btn-xs btn-success">View Profile</a>
-												<a class="btn btn-xs btn-success">Follow</a>
-								</div>
-							</div>
-						</div><!-- /panel -->
-					</div><!-- /.col -->
-					
-					
-					
-					<div class="col-md-4 col-sm-4">
-						<div class="panel panel-default panel-stat2 bg-success">
-							<div class="panel-body">
-								<a class="pull-left avatar" href="#">
-												<img class="img-circle" alt="User Avatar" src="img/user.jpg"></img>
-											</a>
-											<div class="pull-left" style="margin-left:15px;">
-												<strong class="font-16">
-												  Saint Augustine College
-												</strong>
-												<br>
-												<span class="grey">
-												   John@email.com
-												</span>
-												<div class="seperator"></div>
-												<a class="btn btn-xs btn-success">View Profile</a>
-												<a class="btn btn-xs btn-success">Follow</a>
-								</div>
-							</div>
-						</div><!-- /panel -->
-					</div><!-- /.col -->
-					</div>
+				</div>
 					
 					
 					
