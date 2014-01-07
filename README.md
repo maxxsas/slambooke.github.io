@@ -1,4 +1,4 @@
 slambooke
 =========
 
-Exploring schools and bringing students in Ghana together..
+Search engine to locate and find out about schools faster
