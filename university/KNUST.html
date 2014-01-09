@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Benjamin Manford">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    
+	
+
+	<title>Central University College</title>
+	
+	
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Font Awesome -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	
+	<!-- Chosen -->
+	<link href="css/chosen/chosen.min.css" rel="stylesheet"/>
+
+	<!-- Datepicker -->
+	<link href="css/datepicker.css" rel="stylesheet"/>
+	
+	<!-- Timepicker -->
+	<link href="css/bootstrap-timepicker.css" rel="stylesheet"/>
+	
+	<!-- Slider -->
+	<link href="css/slider.css" rel="stylesheet"/>
+	
+	<!-- Tag input -->
+	<link href="css/jquery.tagsinput.css" rel="stylesheet"/>
+
+	<!-- WYSIHTML5 -->
+	<link href="css/bootstrap-wysihtml5.css" rel="stylesheet"/>
+	
+	<!-- Dropzone -->
+	<link href='css/dropzone/dropzone.css' rel="stylesheet"/>
+	
+	<!-- Colorpicker -->
+	<link href="css/jquery.minicolors.css" rel="stylesheet">
+
+	<!-- Endless -->
+	<link href="css/endless.css" rel="stylesheet">
+	<link href="css/endless-skin.css" rel="stylesheet">
+	
+  </head>
+
+  <body class="overflow-hidden">
+	<!-- Overlay Div -->
+	<div id="overlay">
+		<div class="overlay-inner">
+			<div id="followingBallsG">
+				<div id="followingBallsG_1" class="followingBallsG">
+				</div>
+				<div id="followingBallsG_2" class="followingBallsG">
+				</div>
+				<div id="followingBallsG_3" class="followingBallsG">
+				</div>
+				<div id="followingBallsG_4" class="followingBallsG">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+
+	<div id="wrapper" class="preload">
+		<div id="top-nav" class="skin-3 fixed">
+			<button type="button" class="navbar-toggle pull-left" id="sidebarToggle">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			
+			
+			<ul class="nav-notification clearfix">
+				
+				<li><a href="app.html" class="fa fa-home fa-lg"></a></li>
+				<li><a href="#" class="fa fa-search fa-lg"></a></li>
+				
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<i class="fa   fa-arrow-circle-o-down fa-lg"></i>
+						<span class="notification-label">0</span>
+					</a>
+					<!--<ul class="dropdown-menu message dropdown-1">
+						<li><a>Latest updates on slambooke</a></li>					  
+						<li>
+							<a class="clearfix" href="#">
+								<img src="img/favicon.ico" alt="User Avatar">
+								<div class="detail">
+									<strong>John Doe</strong>
+									<p class="no-margin">
+										Lorem ipsum dolor sit amet...
+									</p>
+									<small class="text-muted"><i class="fa fa-check text-success"></i> 27m ago</small>
+								</div>
+							</a>	
+						</li>
+						<li>
+							<a class="clearfix" href="#">
+								<img src="img/favicon.ico" alt="User Avatar">
+								<div class="detail">
+									<strong>Jane Doe</strong>
+									<p class="no-margin">
+										Lorem ipsum dolor sit amet...
+									</p>
+									<small class="text-muted"><i class="fa fa-check text-success"></i> 5hr ago</small>
+								</div>
+							</a>	
+						</li>
+						<li>
+							<a class="clearfix" href="#">
+								<img src="img/favicon.ico" alt="User Avatar">
+								<div class="detail">
+									<strong>Bill Doe</strong>
+									<p class="no-margin">
+										Lorem ipsum dolor sit amet...
+									</p>
+									<small class="text-muted"><i class="fa fa-reply"></i> Yesterday</small>
+								</div>
+							</a>	
+						</li>
+						<li>
+							<a class="clearfix" href="#">
+								<img src="img/favicon.ico" alt="User Avatar">
+								<div class="detail">
+									<strong>Baby Doe</strong>
+									<p class="no-margin">
+										Lorem ipsum dolor sit amet...
+									</p>
+									<small class="text-muted"><i class="fa fa-reply"></i> 9 Feb 2013</small>
+								</div>
+							</a>	
+						</li>
+						<li><a href="#">View all messages</a></li>					  
+					</ul>
+				</li>-->
+				
+					
+				
+				
+					
+				<li class="profile dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Slambooke</strong></a>
+					
+					<!--<ul class="dropdown-menu">
+						<li><a tabindex="-1" href="#" class="main-link"><i class="fa fa-book fa-lg"></i> About</a></li>
+						<li class="divider"></li>
+						<li><a tabindex="-1" href="#" class="main-link"><i class="fa fa-group fa-lg"></i> Our Team</a></li>
+						<li class="divider"></li>
+						<li><a tabindex="-1" href="contact.html" class="main-link"><i class="fa fa-envelope-o fa-lg"></i> Contact</a></li>-->
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- /top-nav-->
+		
+		<aside class="skin-3 fixed">
+								
+			<div class="sidebar-inner">
+				<div class="size-toggle">
+					<a class="btn btn-sm" id="sizeToggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="btn btn-sm pull-right" href="app.html"></a>
+					
+					
+				</div><!-- /size-toggle -->	
+				
+				<div class="search-block">
+					<div class="input-group">
+						<input type="text" class="form-control input-sm" placeholder="search here...">
+						<span class="input-group-btn">
+							<button class="btn btn-default btn-sm" type="button"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+				</div>
+				<!-- /search-block -->
+				
+				
+				
+				<div class="main-menu">
+					<ul>
+						<li>
+							<a href="app.html">
+								<span class="menu-icon">
+									<i class="fa  fa-home fa-lg"></i> 
+								</span>
+								<span class="text">
+									Home
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="blog.html">
+								<span class="menu-icon">
+									<i class="fa   fa-quote-right fa-lg"></i> 
+								</span>
+								<span class="text">
+									Blog
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="menu-icon">
+									<i class="fa fa-arrow-circle-o-down fa-lg"></i> 
+								</span>
+								<span class="text">
+									Updates
+								</span>
+								<span class="badge badge-danger pull-right">0</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="menu-icon">
+									<i class="fa fa-calendar fa-lg"></i> 
+								</span>
+								<span class="text">
+									Events
+								</span>
+								<span class="badge badge-danger pull-right">0</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						
+						<br>
+						<br>
+						
+					
+						<li>
+							<a href="about.html">
+								<span class="menu-icon">
+									<i class="fa  fa-info-circle  fa-lg"></i> 
+								</span>
+								<span class="text">
+									About
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="menu-icon">
+									<i class="fa  fa-question-circle fa-lg"></i> 
+								</span>
+								<span class="text">
+									Help
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="menu-icon">
+									<i class="fa fa-bug fa-lg"></i> 
+								</span>
+								<span class="text">
+									Report a problem
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="developers.html">
+								<span class="menu-icon">
+									<i class="fa fa-code fa-lg"></i> 
+								</span>
+								<span class="text">
+									Developers
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="contact.html">
+								<span class="menu-icon">
+									<i class="fa fa-phone fa-lg"></i> 
+								</span>
+								<span class="text">
+									Contact
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+					</ul>
+					
+					
+				</div><!-- /main-menu -->
+			</div><!-- /sidebar-inner -->
+		</aside>
+		
+		
+		
+
+		<div id="main-container">
+			
+			<div class="padding-md">
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+						<div class="row">
+							<div class="col-xs-6 col-sm-12 col-md-6 text-center">
+								<a href="#">
+									<img src="img/user.jpg" alt="User Avatar" class="img-circle">
+								</a>
+								<div class="seperator"></div>
+								<div class="seperator"></div>
+							</div><!-- /.col -->
+							<div class="col-xs-6 col-sm-12 col-md-6">
+								<strong class="font-14">Central University College</strong>
+								<small class="block text-muted">
+									# Miotso Prampram
+								</small> 
+								<div class="seperator"></div>
+								<a class="btn btn-success btn-xs m-bottom-sm">Ghana, West Africa</a>
+								<div class="seperator"></div>
+								<a href="#" class="social-connect tooltip-test facebook-hover" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" class="social-connect tooltip-test twitter-hover" data-toggle="tooltip" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="social-connect tooltip-test google-plus-hover" data-toggle="tooltip" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a>
+								<div class="seperator"></div>
+								<div class="seperator"></div>
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+						<div class="panel">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-xs-4 text-center">
+										<span class="block font-14">301</span>
+										<small class="text-muted">Students</small>
+									</div><!-- /.col -->
+									<div class="col-xs-4 text-center">
+										<span class="block font-14">129</span>
+										<small class="text-muted">Lectures</small>
+									</div><!-- /.col -->
+									<div class="col-xs-4 text-center">
+										<span class="block font-14">2731</span>
+										<small class="text-muted">Courses</small>
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+							</div>
+						</div><!-- /panel -->
+						
+						<br>
+						
+						<h5 class="headline">
+							About Us
+							<span class="line"></span>
+						</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros nibh, viverra a dui a, 
+						gravida varius velit. Nunc vel tempor nisi. Aenean id pellentesque mi, non placerat mi. Integer
+						luctus accumsan tellus. Vivamus quis elit sit amet nibh lacinia suscipit eu quis purus. Vivamus 
+						tristique est non ipsum dapibus lacinia sed nec metus.</p>
+						
+						<br>
+						
+						
+						<h5 class="headline">
+							Performance
+							<span class="line"></span>
+						</h5>
+						<dl>
+							<dt>Academics <span class="pull-right">100%</span></dt>
+							<dd>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success animated-bar" style="width:100%"></div>
+								</div>
+							</dd>
+							<dt>Sports <span class="pull-right">75%</span></dt>
+							<dd>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success animated-bar" style="width:75%"></div>
+								</div>
+							</dd>
+							<dt>jQuery <span class="pull-right">65%</span></dt>
+							<dd>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success animated-bar" style="width:65%"></div>
+								</div>
+							</dd>
+							<dt>PHP <span class="pull-right">50%</span></dt>
+							<dd>
+								<div class="progress ">
+									<div class="progress-bar progress-bar-success animated-bar" style="width:50%"></div>
+								</div>
+							</dd>
+						</dl>	
+					</div><!-- /.col -->
+					<div class="col-md-9 col-sm-9">
+						<div class="tab-content">
+							<div class="tab-pane fade in active" id="overview">
+								<div class="row">
+									<div class="col-md-8">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												About 
+											</div>
+											<div class="panel-body">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros nibh, viverra a dui a, gravida varius velit. Nunc vel tempor nisi. Aenean id pellentesque mi, non placerat mi. Integer luctus accumsan tellus. Vivamus quis elit sit amet nibh lacinia suscipit eu quis purus. Vivamus tristique est non ipsum dapibus lacinia sed nec metus.</p>
+											</div>
+										</div><!-- /panel -->
+											
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<i class="fa fa-twitter"></i> Latest Tweets
+											</div>
+											<ul class="list-group"> 
+												<li class="list-group-item"> 
+													<p>Welcome <a href="#" class="text-info">@John Doe</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+													<small class="block text-muted">
+														<i class="fa fa-clock-o"></i> 6 minutes ago
+													</small>
+												</li> 
+												<li class="list-group-item"> 
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#" class="text-info">@Jand Doe</a></p> 
+													<small class="block text-muted">
+														<i class="fa fa-clock-o"></i> 41 minutes ago
+													</small> 
+												</li> 
+												<li class="list-group-item"> <p><a href="#" class="text-info">@Bill Doe</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros nibh, viverra a dui a, gravida varius velit.</p> 
+													<small class="block text-muted">
+														<i class="fa fa-clock-o"></i> 1 hour ago
+													</small> 
+												</li> 
+												<li class="list-group-item"> <p><a href="#" class="text-info">@John Doe</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+													<small class="block text-muted">
+														<i class="fa fa-clock-o"></i> 2 hours ago
+													</small> 
+												</li> 
+												<li class="list-group-item"> <p><a href="#" class="text-info">@John Doe</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+													<small class="block text-muted">
+														<i class="fa fa-clock-o"></i> 2 hours ago
+													</small> 
+												</li> 
+												<li class="list-group-item"> <p><a href="#" class="text-info">@John Doe</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+													<small class="block text-muted">
+														<i class="fa fa-clock-o"></i> 2 hours ago
+													</small> 
+												</li> 
+												<li class="list-group-item"> <p><a href="#" class="text-info">@John Doe</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+													<small class="block text-muted">
+														<i class="fa fa-clock-o"></i> 2 hours ago
+													</small> 
+												</li> 
+												<li class="list-group-item"> <p><a href="#" class="text-info">@John Doe</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+													<small class="block text-muted">
+														<i class="fa fa-clock-o"></i> 2 hours ago
+													</small> 
+												</li> 
+												<li class="list-group-item"> <p><a href="#" class="text-info">@John Doe</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+													<small class="block text-muted">
+														<i class="fa fa-clock-o"></i> 2 hours ago
+													</small> 
+												</li> 
+											</ul><!-- /list-group -->
+											
+										</div><!-- /panel -->
+									</div><!-- /.col -->
+									
+									
+									
+							<div class="col-md-4">
+									
+							<h5 class="headline">
+							Ads
+							<span class="line"></span>
+							</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros nibh, viverra a dui a, 
+							gravida varius velit. Nunc vel tempor nisi. Aenean id pellentesque mi, non placerat mi. Integer
+							luctus accumsan tellus. Vivamus quis elit sit amet nibh lacinia suscipit eu quis purus. Vivamus 
+							tristique est non ipsum dapibus lacinia sed nec metus.</p>
+							
+							<br>
+							
+							<h5 class="headline">
+							Vodaphone
+							<span class="line"></span>
+							</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros nibh, viverra a dui a, 
+							gravida varius velit. Nunc vel tempor nisi. Aenean id pellentesque mi, non placerat mi. Integer
+							luctus accumsan tellus. Vivamus quis elit sit amet nibh lacinia suscipit eu quis purus. Vivamus 
+							tristique est non ipsum dapibus lacinia sed nec metus.</p>
+											
+							
+										</div>
+									</div>
+								</div><!-- /panel -->
+							</div><!-- /tab3 -->
+						</div><!-- /tab-content -->
+					</div><!-- /.col -->
+				</div><!-- /.row -->			
+			</div><!-- /.padding-md -->
+		</div><!-- /main-container -->
+	</div><!-- /wrapper -->
+
+	<a href="#" id="scroll-to-top" class="hidden-print"><i class="fa fa-chevron-up"></i></a>
+	
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	
+	<!-- Jquery -->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	
+	<!-- Bootstrap -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+   
+	<!-- holder -->
+	<script src='js/uncompressed/holder.js'></script>
+	
+	<!-- Cookie -->
+	<script src='js/jquery.cookie.min.js'></script>
+	
+	<!-- Endless -->
+	<script src="js/endless/endless.js"></script>
+	
+  </body>
+
+<!-- Mirrored from websdevp.com/Endless/profile.html by HTTrack Website Copier/3.x [XR&CO'2013], Mon, 23 Dec 2013 08:21:56 GMT -->
+</html>
