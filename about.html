@@ -1,87 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+
+<head>
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Benjamin Manford">
     <link rel="shortcut icon" href="img/favicon.ico">
+    
 	
 
-    <title>About Slambooke</title>
+	<title>About</title>
+	
+	
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Font Awesome -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	
+	<!-- Chosen -->
+	<link href="css/chosen/chosen.min.css" rel="stylesheet"/>
 
-    <!-- Slambooke core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+	<!-- Datepicker -->
+	<link href="css/datepicker.css" rel="stylesheet"/>
+	
+	<!-- Timepicker -->
+	<link href="css/bootstrap-timepicker.css" rel="stylesheet"/>
+	
+	<!-- Slider -->
+	<link href="css/slider.css" rel="stylesheet"/>
+	
+	<!-- Tag input -->
+	<link href="css/jquery.tagsinput.css" rel="stylesheet"/>
 
-    <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+	<!-- WYSIHTML5 -->
+	<link href="css/bootstrap-wysihtml5.css" rel="stylesheet"/>
+	
+	<!-- Dropzone -->
+	<link href='css/dropzone/dropzone.css' rel="stylesheet"/>
+	
+	<!-- Colorpicker -->
+	<link href="css/jquery.minicolors.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+	<!-- Endless -->
+	<link href="css/endless.css" rel="stylesheet">
+	<link href="css/endless-skin.css" rel="stylesheet">
+	
   </head>
 
-  <body>
-
-	<body background="img/bg.png">
-  
+  <body class="overflow-hidden">
+	<!-- Overlay Div -->
+	<div id="overlay">
+		<div class="overlay-inner">
+			<div id="followingBallsG">
+				<div id="followingBallsG_1" class="followingBallsG">
+				</div>
+				<div id="followingBallsG_2" class="followingBallsG">
+				</div>
+				<div id="followingBallsG_3" class="followingBallsG">
+				</div>
+				<div id="followingBallsG_4" class="followingBallsG">
+				</div>
+			</div>
+		</div>
+	</div>
 	
-    <div class="site-wrapper">
+	
+	
+	
+	
 
-      <div class="site-wrapper-inner">
+	<div id="wrapper" class="preload">
+		<div id="top-nav" class="skin-3 fixed">
+			
+			
+			
+			
 
-        <div class="cover-container">
+			<ul class="nav-notification clearfix">
+				<li class="dropdown">
+					<li><a href="app.html" class="main-link"><i class="fa fa-home fa-lg"></i></a></li>
+				</li>
+						
+					
+					
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h4 class="masthead-brand">About Slambooke</h4>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">About</a></li>
-                <li><a href="app.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
+
+
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-bell-o fa-lg"></i>
+						<span class="notification-label">12</span>
+					</a>
+					<ul class="dropdown-menu task dropdown-2">					  
+						<li><a> You have 6 new schools added</a></li>					  
+						<li>
+							<a class="clearfix" href="university/central_university_college.html">
+								<img src="img/central_logo.png" alt="User Avatar">
+								<div class="detail">
+									<strong>Central University</strong>
+									<p class="no-margin">
+										# Miotso Prampram
+									</p>
+									<small class="text-muted"><i class="fa fa-check text-success"></i> 7:27 AM | GMT</small>
+								</div>
+							</a>	
+						</li>
+						<li>
+							<a class="clearfix" href="university/knust.html">
+								<img src="img/central_logo.png" alt="User Avatar">
+								<div class="detail">
+									<strong>KNUST</strong>
+									<p class="no-margin">
+										# Kumasi
+									</p>
+									<small class="text-muted"><i class="fa fa-check text-success"></i> 7:28 AM | GMT</small>
+								</div>
+							</a>	
+						</li>
+						<li>
+							<a class="clearfix" href="university/university_of_ghana_legon.html">
+								<img src="img/central_logo.png" alt="User Avatar">
+								<div class="detail">
+									<strong>Uni Of Ghana Legon</strong>
+									<p class="no-margin">
+										# Legon
+									</p>
+									<small class="text-muted"><i class="fa fa-reply"></i> 11 Jan 2014</small>
+								</div>
+							</a>	
+						</li>
+						<li>
+							<a class="clearfix" href="#">
+								<img src="img/central_logo.png" alt="User Avatar">
+								<div class="detail">
+									<strong>St. Thomas Aquinas</strong>
+									<p class="no-margin">
+										# Cantonments
+									</p>
+									<small class="text-muted"><i class="fa fa-reply"></i> 9 Feb 2013</small>
+								</div>
+							</a>	
+						</li>
+						<li><a href="app.html">View all the schools</a></li>					  
+					</ul>
+				</li>
+
+
+
+
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<i class="fa fa-download fa-lg"></i>
+						<span class="notification-label">5</span>
+					</a>
+					<ul class="dropdown-menu notification dropdown-3">
+						<li><a href="#"> New updates pushed</a></li>					  
+						<li>
+							<a href="#">
+								<span class="notification-icon bg-warning">
+									<i class="fa fa-bug fa-lg"></i>
+								</span>
+								<span class="m-left-xs">Server #2 not responding.</span>
+								<span class="time text-muted">Just now</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="notification-icon bg-success">
+									<i class="fa fa-plus"></i>
+								</span>
+								<span class="m-left-xs">New user registration.</span>
+								<span class="time text-muted">2m ago</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="notification-icon bg-danger">
+									<i class="fa fa-bolt"></i>
+								</span>
+								<span class="m-left-xs">Application error.</span>
+								<span class="time text-muted">5m ago</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="notification-icon bg-success">
+									<i class="fa fa-usd"></i>
+								</span>
+								<span class="m-left-xs">2 items sold.</span>
+								<span class="time text-muted">1hr ago</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="notification-icon bg-success">
+									<i class="fa fa-plus"></i>
+								</span>
+								<span class="m-left-xs">New user registration.</span>
+								<span class="time text-muted">1hr ago</span>
+							</a>
+						</li>
+						<li><a href="#">View all notifications</a></li>					  
+					</ul>
+				</li>
+				<li class="profile dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="app.html">
+						<strong>Slambooke</strong>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a tabindex="-1" href="blog.html" class="main-link"></i><strong>Blog</strong></a></li>
+						<li class="divider"></li>
+						<li><a tabindex="-1" href="faq.html" class="main-link"></i><strong>Help</strong></a></li>
+						<li class="divider"></li>
+						<li><a tabindex="-1" href="about.html" class="main-link"></i><strong>About</strong></a></li>
+						<li class="divider"></li>
+						<li><a tabindex="-1" href="ninjas.html" class="main-link"></i><strong>Team</strong></a></li>
+						<li class="divider"></li>
+						<li><a tabindex="-1" href="contact.html" class="main-link"></i><strong>Contact</strong></a></li>
+					</ul>
+		</div><!-- /top-nav-->
+
+
+
+
+
+		
+		<aside class="skin-3 fixed">
+								
+			<div class="sidebar-inner">
+				<div class="size-toggle">
+					<a class="btn btn-sm" id="sizeToggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="btn btn-sm pull-right" href="app.html"></a>	
+				</div><!-- /size-toggle -->	
+
+				
+				<!--<div class="search-block">
+					<div class="input-group">
+						<input type="text" class="form-control input-sm" action="university" placeholder="search here...">
+						<span class="input-group-btn">
+							<button class="btn btn-default btn-sm" type="button"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+				</div>-->
+				
+				
+				
+				<div class="main-menu">
+					<ul>
+						<li>
+							<a href="app.html">
+								<span class="menu-icon">
+									<i class="fa  fa-home fa-lg"></i> 
+								</span>
+								<span class="text">
+									Home
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="blog.html">
+								<span class="menu-icon">
+									<i class="fa   fa-quote-right fa-lg"></i> 
+								</span>
+								<span class="text">
+									Blog
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="menu-icon">
+									<i class="fa fa-arrow-circle-o-down fa-lg"></i> 
+								</span>
+								<span class="text">
+									Updates
+								</span>
+								<span class="badge badge-danger pull-right">0</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="menu-icon">
+									<i class="fa fa-calendar fa-lg"></i> 
+								</span>
+								<span class="text">
+									Events
+								</span>
+								<span class="badge badge-danger pull-right">0</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="faq.html">
+								<span class="menu-icon">
+									<i class="fa  fa-question-circle fa-lg"></i> 
+								</span>
+								<span class="text">
+									Help
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="ninjas.html">
+								<span class="menu-icon">
+									<i class="fa  fa-sitemap fa-lg"></i> 
+								</span>
+								<span class="text">
+									Team
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="developers.html">
+								<span class="menu-icon">
+									<i class="fa fa-github fa-lg"></i> 
+								</span>
+								<span class="text">
+									Developers
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="contact.html">
+								<span class="menu-icon">
+									<i class="fa fa-phone fa-lg"></i> 
+								</span>
+								<span class="text">
+									Contact
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="about.html">
+								<span class="menu-icon">
+									<i class="fa  fa-info-circle  fa-lg"></i> 
+								</span>
+								<span class="text">
+									About
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="menu-icon">
+									<i class="fa fa-bug fa-lg"></i> 
+								</span>
+								<span class="text">
+									Report a problem
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+					</ul>
+					
+				</div><!-- /main-menu -->
+			</div><!-- /sidebar-inner -->
+		</aside>
+
+		
+
+
+		<div id="main-container">
+			<div class="padding-md">
+			<div class="row">
+					
 			
-			<div class="inner cover">
-            <h2 class="cover-heading">What</h2>
-            <p class="lead">Slambooke is an early stage technology startup founded in the heart of Accra Ghana.</p>
-			
-			
-			
-			<h2 class="cover-heading">Why</h2>
-            <p class="lead">Because we want to build the best school search engine in the world. Because we believe we can. 
-			Because someday very soon everybody will have a PC or Smartphone.</p>
+			<h4 class="cover-heading text-center">Slambooke Version 1.0</h4>
+            <p class="lead text-center">---------------------------------------------</p>
             
-	
+            <br>
+
+		  <div class="inner cover">
+            <h4 class="cover-heading text-center"><strong>What</strong></h4>
+            <p class="lead text-center">Slambooke is an early stage technology startup founded in the heart of Accra Ghana.</p>
+			
+			
 			<br>
 			
-			
+			<h4 class="cover-heading text-center"><strong>Why</strong></h4>
+            <p class="lead text-center">Because we want to build the best school search engine in the world. Because we believe we can. 
+			Because someday very soon everybody will have a PC or Smartphone.</p>
+            
+			<br>
+			<br>
+			<br>
+		
+			<p class="lead text-center">Slambooke © 2014 English (Gh)</p>
           </div>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p><strong>Slambooke © 2014  English (Gh)</strong></a><!--, by <a href="https://www.facebook.com/iammanford">manfordbenjamin</a>.</p>-->
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- Slambooke core JavaScript
+	<a href="#" id="scroll-to-top" class="hidden-print"><i class="fa fa-chevron-up"></i></a>
+	
+    <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	
+	<!-- Jquery -->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	
+	<!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/holder.js"></script>
+   
+	<!-- Cookie -->
+	<script src='js/jquery.cookie.min.js'></script>
+
+	<!-- Endless -->
+	<script src="js/endless/endless.js"></script>
+	
   </body>
+
+
 </html>
