@@ -1,5 +1,5 @@
-
 slambooke
-==========
+=========
 
-Source for slambooke.github.io
+Search engine to locate and find out about schools in Ghana faster
+
