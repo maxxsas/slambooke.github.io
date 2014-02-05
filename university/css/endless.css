@@ -705,8 +705,12 @@ body {
 body.dark {
   background: #;
 }
-img {
-  max-width: 100%;
+img{
+  
+}
+img.no-resize {
+  min-height: 140px;
+  min-width: 140px;
 }
 ul {
   padding: 0;
