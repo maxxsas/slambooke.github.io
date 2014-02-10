@@ -484,7 +484,7 @@ h6,
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #FFFFFF;
 }
 
 h1 small,
@@ -4796,7 +4796,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse {
-  background-color: #222222;
+  background-color: rgb(255, 255, 255
   border-color: #080808;
 }
 
